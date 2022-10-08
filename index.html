@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website Vanya</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/86863270c6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blogger">Blog</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web developer      <i class="fa-solid fa-heart"></i></p>
+                <h1>Hi, i'm <span>Vanya</span><br>Mayazura from Indonesia</h1>
+            </div>
+        </div>
+        </div>
+
+
+        <!-----------------bagian about-------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello my name is Vanya. Currently im still in college. i'm sophomore student in Gunadarma University and my major is Information System. I'm in 4th grade and 7th semester in college. I like to learn new things and i can work individually or in group. In my free time i watch netflix and play fps games.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills"> <!-- buat bagian isi dari skills di about me-->
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript, MySQL, Golang</li>
+                                <li><span>Editing and Drawing</span><br>Adobe Photoshop, CorelDraw, Medibang Paint</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience"> <!-- buat bagian isi dari experience di about me-->
+                            <ul>
+                                <li><span>2017</span><br>Japanese Club Event Organizer</li>
+                                <li><span>2020 - Now</span><br>Lab assistant at Lepkom Gunadarma</li>
+                                <li><span>2022 - Now</span><br>Skilvul Impact Back End Dev</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education"> <!-- buat bagian isi dari education di about me-->
+                            <ul>
+                                <li><span>2013</span><br>Junior Highschool SMP Islam AL-Ikhlas</li>
+                                <li><span>2016</span><br>High School MAN 9 Jakarta</li>
+                                <li><span>2019 - Now</span><br>Gunadarma University - Information System</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------Service----------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-sharp fa-solid fa-paintbrush"></i>
+                        <h2>Drawing</h2>
+                        <p>I usually draw anime or commission by using digital apps that i used.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-film"></i>
+                        <h2>Editing</h2>
+                        <p>Sometime i edit pictures and videos to make money sometime i do it just for the hobby.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!---------------portofolio------------------------>
+        <div id="portofolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Onix Shop Website</h3>
+                            <p>A website that i made to fulfill a college duty. The website that i made are about selling console games in the internet such as Playstation 2, 4 and 5 and also we have some console for PC. Currently this website is not being hosted.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Drawing</h3>
+                            <p>I can draw art such as anime or other by using digital art and traditional art.</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Jockey Game Service</h3>
+                            <p>I usually play rank games such as valorant. I play fps games. This service is about boosting your account into a higher rank or you can also play with me in game.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!--------------------- BLOG ------------------------------->
+        <div id="blogger">
+
+            <div class="container">
+      
+              <!--
+                - BLOG SECTION
+              -->
+      
+              <div class="blog">
+      
+                <h2 class="h2">My Blog</h2>
+      
+                <div class="blog-card-group">
+      
+                  <div class="blog-card">
+      
+                    <div class="blog-card-banner">
+                      <img src="images/blog-1.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
+                        width="250" class="blog-banner-img">
+                    </div>
+      
+                    <div class="blog-content-wrapper">
+      
+                      <button class="blog-topic text-tiny">Database</button>
+      
+                      <h3>
+                        <a href="#" class="h3">
+                          Building microservices with Dropwizard, MongoDB & Docker
+                        </a>
+                       
+                      </h3>
+      
+                      <p class="blog-text">
+                        This NoSQL database oriented to documents (by documents like JSON) combines some of the features from
+                        relational
+                        databases, easy to use and the multi-platform is the best option for scale up and have fault
+                        tolerance, load balancing,
+                        map reduce, etc.
+                      </p>
+      
+                      <div class="wrapper-flex">
+      
+                        <div class="profile-wrapper">
+                          <img src="images/author.png" alt="Julia Walker" width="50">
+                        </div>
+      
+                        <div class="wrapper">
+                          <a href="#" class="h4">Vanya Mayazura</a>
+      
+                          <p class="text-sm">
+                            <time datetime="2022-01-17">Jan 17, 2022</time>
+                            <span class="separator"></span>
+                            <ion-icon name="time-outline"></ion-icon>
+                            <i class="fa-regular fa-clock"></i>
+                            <time datetime="PT3M">3 min</time>
+                          </p>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+      
+                  </div>
+      
+      
+                  <div class="blog-card">
+      
+                    <div class="blog-card-banner">
+                      <img src="images/blog-2.png" alt="Fast web page loading on a $20 feature phone" width="250"
+                        class="blog-banner-img">
+                    </div>
+      
+                    <div class="blog-content-wrapper">
+      
+                      <button class="blog-topic text-tiny">Web Performance</button>
+      
+                      <h3><a href="" class="h3">Fast web page loading on a $20 feature phone</a></h3>
+      
+                      <p class="blog-text">
+                        Feature phones are affordable (under $20-25), low-end devices enabling 100s of millions of users in
+                        developing countries
+                        to leverage the web. Think of them as a light version of a smart phone.
+                      </p>
+      
+                      <div class="wrapper-flex">
+      
+                        <div class="profile-wrapper">
+                          <img src="images/author.png" alt="Julia walker" width="50">
+                        </div>
+      
+                        <div class="wrapper">
+                          <a href="#" class="h4">Vanya Mayazura</a>
+      
+                          <p class="text-sm">
+                            <time datetime="2021-12-10">Dec 10, 2022</time>
+                            <span class="separator"></span>
+                            <ion-icon name="time-outline"></ion-icon>
+                            <i class="fa-regular fa-clock"></i>
+                            <time datetime="PT2M">2 min</time>
+                          </p>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+      
+                  </div>
+      
+      
+                  <div class="blog-card">
+      
+                    <div class="blog-card-banner">
+                      <img src="images/blog-3.png" alt="Accessibility Tips for Web Developers" width="250"
+                        class="blog-banner-img">
+                    </div>
+      
+                    <div class="blog-content-wrapper">
+      
+                      <button class="blog-topic text-tiny">Accessibility</button>
+      
+                      <h3><a href="" class="h3">Accessibility Tips for Web Developers</a></h3>
+      
+                      <p class="blog-text">
+                        It's awesome to build sites that are inclusive and accessible to everyone. There are at least six key
+                        areas of
+                        disability we can optimize for: visual, hearing, mobility, cognition, speech and neural. Many tools
+                        and resources can
+                        help here, even if you're totally new to web accessibility.
+                      </p>
+      
+                      <div class="wrapper-flex">
+      
+                        <div class="profile-wrapper">
+                          <img src="images/author.png" alt="Julia walker" width="50">
+                        </div>
+      
+                        <div class="wrapper">
+                          <a href="#" class="h4">Vanya Mayazura</a>
+      
+                          <p class="text-sm">
+                            <time datetime="2021-11-28">Nov 28, 2021</time>
+                            <span class="separator"></span>
+                            <ion-icon name="time-outline"></ion-icon>
+                            <i class="fa-regular fa-clock"></i>
+                            <time datetime="PT4M">4 min</time>
+                          </p>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+      
+                  </div>
+      
+      
+                  <div class="blog-card">
+      
+                    <div class="blog-card-banner">
+                      <img src="images/blog-4.png" alt="Dynamically Securing Databases using Hashicorp Vault"
+                        width="250" class="blog-banner-img">
+                    </div>
+      
+                    <div class="blog-content-wrapper">
+      
+                      <button class="blog-topic text-tiny">Database</button>
+      
+                      <h3><a href="" class="h3">Dynamically Securing Databases using Hashicorp Vault</a></h3>
+      
+                      <p class="blog-text">
+                        Nowadays, it's hard to profoundly talk about security in the IT industry, since it has to be
+                        considered on so many
+                        different levels: from securing code chunks, securing containers, up to securing complex
+                        infrastructures and defining
+                        strong authorization and authentication policies across the enterprise.
+                      </p>
+      
+                      <div class="wrapper-flex">
+      
+                        <div class="profile-wrapper">
+                          <img src="images/author.png" alt="Julia walker" width="50">
+                        </div>
+      
+                        <div class="wrapper">
+                          <a href="#" class="h4">Vanya Mayazura</a>
+      
+                          <p class="text-sm">
+                            <time datetime="2021-11-20">Nov 20, 2021</time>
+                            <span class="separator"></span>
+                            <ion-icon name="time-outline"></ion-icon>
+                            <i class="fa-regular fa-clock"></i>
+                            <time datetime="PT4M">4 min</time>
+                          </p>
+                        </div>
+      
+                      </div>
+      
+                    </div>
+      
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+
+        <!---------------- Contact -------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> mayazurav@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 6281280506903</p>
+                        <p><i class="fa-brands fa-discord"></i> Vanya#9925</p><br>
+
+                        <div class="social-icons">
+                            <a href="https://wa.me/6281280506903"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/vanya.maya.9/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://github.com/vnymyz"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn-2">Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn-2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+
+                   
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © Vanya Mayazura. All Rights Reserved <i class="fa-solid fa-star"></i></p>
+            </div>
+        </div>
+
+<!----------------------- SCRIPT ---------------------------------->
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+<script> /* buat google sheet nya */
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHoTHqzQwBAfVXyOYjAfYAOLUDQdprZ7h9c7uVy8EeDESI-sIDY1JRIRiXtMfkH8HO7A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank you, your message are sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
